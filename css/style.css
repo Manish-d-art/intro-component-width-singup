@@ -15,12 +15,25 @@ body{
     background-color: hsl(0, 100%, 74%) ;
 }
 
+@media (min-width:500px)  {
+    .main{
+        padding:6rem 3rem 4rem 3rem !important;
+    }
+    .main__heading{
+        font-size: 1.8rem !important;
+        color:white;
+        margin-bottom: 1rem;
+        padding:0 4%;
+    }
+    
+}
+
 a{
     text-decoration: none;
 }
 
 .main{
-    padding:6rem 1.5rem 2rem 1.5rem;
+    padding:6rem 1.5rem 4rem 1.5rem;
 }
 
 .main__section-1{
@@ -55,12 +68,15 @@ a{
     font-weight: 400;
     margin-bottom: 1.5rem;
     border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px hsl(249, 10%, 26%,.2) ;
 }
 
 .main__form-section{
     background-color: white;
     padding:1rem;
     line-height: 4.5;
+    box-shadow: 0 8px hsl(249, 10%, 26%,.2) ;
     border-radius: 10px;
 }
 input{
@@ -82,6 +98,7 @@ input{
     margin-top:9px;
     border-radius: 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn-agreement{
@@ -94,4 +111,5 @@ input{
 }
 .terms{
     color:red;
+    cursor: pointer;
 }
