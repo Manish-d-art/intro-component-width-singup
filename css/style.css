@@ -75,7 +75,7 @@ body{
         margin-top:11%;
     }
     .main__section-2{
-        flex-basis: 40%;
+        flex-basis: 45%;
     }
     .main__heading{
         font-size: 3rem !important;
@@ -139,7 +139,7 @@ a{
 
 .main__form-section{
     background-color: white;
-    padding:1rem;
+    padding:2rem 2.5rem;
     box-shadow: 0 8px hsl(249, 10%, 26%,.2) ;
     border-radius: 10px;
 }
