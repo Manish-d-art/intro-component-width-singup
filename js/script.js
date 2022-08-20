@@ -33,6 +33,7 @@ submitBtn.addEventListener('click',function(){
     else{
         Lname.style.border="2px solid hsl(154, 59%, 51%)";
     }
+    
 
     if(email.value===''){
         const icon=document.querySelector(`.email-icon`);
@@ -45,13 +46,14 @@ submitBtn.addEventListener('click',function(){
     else if(!email.value.match(pattern)){
         email.value="";
         email.placeholder="email@Example/com";
-        email +='red';
+        // email +='red';
         document.querySelector('.email-msge').classList.remove('hidden');
     }
     else{
         email.style.border="2px solid hsl(154, 59%, 51%)";
         email.placeholder="";
     }
+
 
     if(pswrd.value===''){
         const icon=document.querySelector(`.pswrd-icon`);
@@ -64,4 +66,7 @@ submitBtn.addEventListener('click',function(){
     else{
         pswrd.style.border="2px solid hsl(154, 59%, 51%)";
     }
+
+
+   
 });
