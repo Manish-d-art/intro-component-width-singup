@@ -67,7 +67,6 @@ body{
     .main{
         display:flex;
         justify-content: space-around;
-        /* align-items: center; */
         padding:6rem 5.5rem 4rem 5.5rem !important;
 
     }
@@ -141,7 +140,6 @@ a{
 .main__form-section{
     background-color: white;
     padding:1rem;
-    /* line-height: 5; */
     box-shadow: 0 8px hsl(249, 10%, 26%,.2) ;
     border-radius: 10px;
 }
@@ -197,7 +195,6 @@ input{
     position: absolute;
     top:28px;
     right:25px;
-    /* display: none; */
 }
 
 .error-msge{
