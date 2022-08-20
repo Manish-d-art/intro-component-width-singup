@@ -45,7 +45,7 @@ submitBtn.addEventListener('click',function(){
     else if(!email.value.match(pattern)){
         email.value="";
         email.placeholder="email@Example/com";
-        // email. placeholder.style.color="red";
+        email +='red';
         document.querySelector('.email-msge').classList.remove('hidden');
     }
     else{
