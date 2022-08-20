@@ -10,6 +10,11 @@ const pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 submitBtn.addEventListener('click',function(){
 
+    if(Fname.value !== '' && Lname.value !== '' && email.value !== '' && pswrd.value !== ''){
+        alert("You have claimed your trial. A confirmation Email will be sent to you.. THANK YOU :)");
+    }
+
+
     if(Fname.value===''){
         const icon=document.querySelector('.icon-1');
         icon.classList.remove('hidden');
