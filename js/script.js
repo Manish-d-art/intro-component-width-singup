@@ -50,6 +50,7 @@ submitBtn.addEventListener('click',function(){
     }
     else{
         email.style.border="2px solid hsl(154, 59%, 51%)";
+        email.placeholder="";
     }
 
     if(pswrd.value===''){
