@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 *{
     margin:0;
     padding: 0;
@@ -141,7 +140,7 @@ a{
 .main__form-section{
     background-color: white;
     padding:1rem;
-    line-height: 4.5;
+    /* line-height: 5; */
     box-shadow: 0 8px hsl(249, 10%, 26%,.2) ;
     border-radius: 10px;
 }
@@ -153,6 +152,7 @@ input{
     font-weight: 700;
     font-size: 1rem;
     border-radius: 6px;
+    margin:.5rem 0 .5rem 0;
 }
 .main__form-btn{
     width:100%;
@@ -166,6 +166,7 @@ input{
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 6px rgba(52, 161, 114, 0.8) ;
+    padding:1.5rem;
 }
 .main__form-btn:hover{
     opacity:.7;
@@ -193,6 +194,23 @@ input{
 
 .error-icon{
     position: absolute;
-    top:20px;
+    top:28px;
     right:25px;
+    /* display: none; */
 }
+
+.error-msge{
+     margin-bottom: 20px;
+    font-size: 10px;
+    color:red;
+    width:100%;
+    display: flex;
+    justify-content: end;
+}
+.hidden{
+    display: none;
+}
+
+/* .form-in{
+    border:2px solid red;
+} */
