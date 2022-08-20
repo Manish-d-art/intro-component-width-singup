@@ -213,11 +213,6 @@ input{
     display: none;
 }
 
-form-in ::placeholder{
-    color:red;
-    /* display:none */
-}
-
 .red{
     color:red;
 }
