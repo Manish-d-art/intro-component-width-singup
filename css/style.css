@@ -206,9 +206,15 @@ input{
     width:100%;
     display: flex;
     justify-content: end;
+    font-style: italic;
 }
 .hidden{
     display: none;
+}
+
+form-in ::placeholder{
+    color:red;
+    /* display:none */
 }
 
 /* .form-in{
