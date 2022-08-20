@@ -184,3 +184,15 @@ input{
     color:red;
     cursor: pointer;
 }
+
+
+/* error */
+.input-block{
+    position: relative;
+}
+
+.error-icon{
+    position: absolute;
+    top:20px;
+    right:25px;
+}
