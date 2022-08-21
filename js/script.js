@@ -4,15 +4,19 @@ const Fname=document.querySelector('#fname');
 const Lname=document.querySelector('#lname');
 const email=document.querySelector('#email');
 const pswrd=document.querySelector('#pswd');
-const submitBtn=document.querySelector('.button');
+const submitBtn=document.querySelector('.button-2');
 const pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const btn1=document.querySelector('.button-1');
+
 
 
 submitBtn.addEventListener('click',function(){
+    document.querySelector('.button-2').style.opacity=".7";
 
-    if(Fname.value !== '' && Lname.value !== '' && email.value !== '' && pswrd.value !== ''){
-        alert("You have claimed your trial. A confirmation Email will be sent to you.. THANK YOU :)");
-    }
+    // if(Fname.value !== '' && Lname.value !== '' && email.value !== '' && pswrd.value !== ''){
+    //     document.querySelector('.main__form-btn').style.opacity="1";
+    //     alert("You have claimed your trial. A confirmation Email will be sent to you.. THANK YOU :)");
+    // }
 
 
     if(Fname.value===''){
@@ -50,7 +54,6 @@ submitBtn.addEventListener('click',function(){
     else if(!email.value.match(pattern)){
         email.value="";
         email.placeholder="";
-        // email +='red';
         document.querySelector('.error-msge-3-2').classList.add('hidden');
         document.querySelector('.error-msge-3-1').classList.remove('hidden');
     }
@@ -73,10 +76,17 @@ submitBtn.addEventListener('click',function(){
     }
 });
 
+var count=0;
 for(let i=1;i<=4;i++){
     let v=document.querySelector(`.form-in-${i}`);
     if(v.value===''){
         v.addEventListener('click',function(){
+            count++;
+            if(count===4){
+                console.log('yes');
+                    document.querySelector('.button-2').style.opacity="1";
+            }
+
             if(i==3){
                 document.querySelector(`.icon-${i}`).classList.add('hidden');
                 document.querySelector(`.error-msge-${i}-1`).classList.add('hidden');
@@ -91,5 +101,9 @@ for(let i=1;i<=4;i++){
             
         })
     }
-    
 }
+
+btn1.addEventListener('click',function(){
+    // console.log('yes');
+    document.querySelector('.main__link').style.opacity=".8";
+})
