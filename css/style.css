@@ -157,20 +157,7 @@ input{
     border-radius: 6px;
     margin:.5rem 0 .5rem 0;
 }
-.main__form-btn{
-    width: 100%; 
-    /* background-color: hsl(154, 59%, 51%); */
-    display: block;
-    text-align: center;
-    color: white;
-    letter-spacing: 1px;
-    margin-top: 9px;
-    /* border-radius: 10px; */
-    font-weight: 600;
-    cursor: pointer;
-    /* box-shadow: 0 6px rgb(52 161 114 / 80%); */
-    padding: 1rem;
-}
+
 .button-2{
     all: unset;
     width: 100%;
@@ -178,6 +165,13 @@ input{
     border-radius: 10px;
     box-shadow: 0 6px rgb(52 161 114 / 80%);
     margin-top: 9px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
 }
 .button-2:hover{
     opacity:.7;
