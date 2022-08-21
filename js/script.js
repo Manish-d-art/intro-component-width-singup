@@ -6,7 +6,7 @@ const email=document.querySelector('#email');
 const pswrd=document.querySelector('#pswd');
 const submitBtn=document.querySelector('.button-2');
 const pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-const btn1=document.querySelector('.button-1');
+const btn1=document.querySelector('.main__link');
 
 
 
@@ -104,6 +104,6 @@ for(let i=1;i<=4;i++){
 }
 
 btn1.addEventListener('click',function(){
-    // console.log('yes');
+    console.log('yes');
     document.querySelector('.main__link').style.opacity=".8";
 })
