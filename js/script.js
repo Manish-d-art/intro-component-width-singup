@@ -76,34 +76,34 @@ submitBtn.addEventListener('click',function(){
     }
 });
 
-var count=0;
-for(let i=1;i<=4;i++){
-    let v=document.querySelector(`.form-in-${i}`);
-    if(v.value===''){
-        v.addEventListener('click',function(){
-            count++;
-            if(count===4){
-                console.log('yes');
-                    document.querySelector('.button-2').style.opacity="1";
-            }
+// var count=0;
+// for(let i=1;i<=4;i++){
+//     let v=document.querySelector(`.form-in-${i}`);
+//     if(v.value===''){
+//         v.addEventListener('click',function(){
+//             count++;
+//             if(count===4){
+//                 console.log('yes');
+//                     document.querySelector('.button-2').style.opacity="1";
+//             }
 
-            if(i==3){
-                document.querySelector(`.icon-${i}`).classList.add('hidden');
-                document.querySelector(`.error-msge-${i}-1`).classList.add('hidden');
-                document.querySelector(`.error-msge-${i}-2`).classList.add('hidden');
-                document.querySelector(`.form-in-${i}`).style.border=".5px solid hsl(246, 25%, 77%)";
-            }
-            else{
-                document.querySelector(`.icon-${i}`).classList.add('hidden');
-                document.querySelector(`.error-msge-${i}`).classList.add('hidden');
-                document.querySelector(`.form-in-${i}`).style.border=".5px solid hsl(246, 25%, 77%)";
-            }
+//             if(i==3){
+//                 document.querySelector(`.icon-${i}`).classList.add('hidden');
+//                 document.querySelector(`.error-msge-${i}-1`).classList.add('hidden');
+//                 document.querySelector(`.error-msge-${i}-2`).classList.add('hidden');
+//                 document.querySelector(`.form-in-${i}`).style.border=".5px solid hsl(246, 25%, 77%)";
+//             }
+//             else{
+//                 document.querySelector(`.icon-${i}`).classList.add('hidden');
+//                 document.querySelector(`.error-msge-${i}`).classList.add('hidden');
+//                 document.querySelector(`.form-in-${i}`).style.border=".5px solid hsl(246, 25%, 77%)";
+//             }
             
-        })
-    }
-}
+//         })
+//     }
+// }
 
 btn1.addEventListener('click',function(){
-    console.log('yes');
+    // console.log('yes');
     document.querySelector('.main__link').style.opacity=".8";
 })
